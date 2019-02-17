@@ -5,18 +5,18 @@ import './NavItem'
 export default props =>
     <ul>
         <li>
-            <Link to="/">about</Link>
+            <Link class="link" to="/">about</Link>
         </li>
         <li>
-            <Link to="/">skills</Link>
+            <Link class="link" to="/">skills</Link>
         </li>
         <li>
-            <Link to="/">experience</Link>
+            <Link class="link" to="/">experience</Link>
         </li>
         <li>
-            <Link to="/">education</Link>
+            <Link class="link" to="/">education</Link>
         </li>
         <li>
-            <Link to="/">contact</Link>
+            <Link class="link" to="/">contact</Link>
         </li>
     </ul>

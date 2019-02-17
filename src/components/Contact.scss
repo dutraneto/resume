@@ -1,0 +1,21 @@
+.contact p {
+    margin-left: 2rem;
+    margin-top: -.5rem;
+    font-size: .7rem;
+    color: var(--paragraph-primary);
+}
+
+div.about {
+    width: 15rem;
+    padding: .5rem 5rem .5rem 1rem;
+    margin: 2rem 0;
+    display: inline-block;
+    background-color: var(--heading-primary);
+    transform: skewX(-15deg);
+}
+
+h2 {
+    color: #FFFFFF;
+    transform: skewX(15deg);
+    margin: 0;
+}
