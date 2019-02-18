@@ -11,10 +11,10 @@ export default props =>
             <Link className="link" to="/">skills</Link>
         </li>
         <li>
-            <Link className="link" to="/">experience</Link>
+            <Link className="link" to="/experience">experience</Link>
         </li>
         <li>
-            <Link className="link" to="/">education</Link>
+            <Link className="link" to="/education">education</Link>
         </li>
         <li>
             <Link className="link" to="/">contact</Link>

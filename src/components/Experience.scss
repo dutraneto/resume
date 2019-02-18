@@ -1,4 +1,28 @@
 .experience {
+    padding: 3rem 0 5rem 10rem;
     height: 60%;
     background-color: var(--heading-primary);
+
+    &__container {
+        display: flex;
+        align-items: center;
+    }
+
+    &__h2 {
+        display: inline-block;
+        background-color: var(--color-tertiary);
+        padding: .5rem 2rem .5rem 1rem;
+        border-radius: 7px;
+        font-weight: 400;
+    }
+
+    &__line {
+        margin-left: 5rem;
+        height: 2px;
+        background-color: var(--color-secondary);
+        flex-grow: 1;
+    }
+
+
+
 }

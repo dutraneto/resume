@@ -8,27 +8,27 @@ export default class Skills extends React.Component {
     constructor() {
         super()
         this.state = {
-            percent: [70, 80, 50, 10],
+            percent: 0,
             html: '#E34F26',
             css: '#1572B6',
             js: '#F7DF1E',
             react: '#61DAFB',
         }
+        this.increase = this.increase.bind(this);
     }
 
-    // componentDidMount() {
-    //     this.increase();
-    // }
-
-    // increase() {
-    //     const percent = this.state.percent + 1;
-    //     if (percent >= 100) {
-    //         clearTimeout(this.tm);
-    //         return;
-    //     }
-    //     this.setState({ percent });
-    //     this.tm = setTimeout(this.increase, 10);
-    // }
+    increase() {
+        const percent = this.state.percent + 1;
+        if (percent >= 100) {
+            clearTimeout(this.tm);
+            return;
+        }
+        this.setState({ percent });
+        this.tm = setTimeout(this.increase, 10);
+    }
+    componentDidMount() {
+        this.increase();
+    }
 
     render() {
         const { percent, html, css, js, react } = this.state;
@@ -55,7 +55,8 @@ export default class Skills extends React.Component {
                 <div style={circleContainerStyle}>
                     <FaHtml5 style={svgStyles} className="html"/>
                     <Circle style={containerStyle}
-                        percent={percent[0]}
+                        // percent={this.state.percent}
+                        percent={percent/1.2}
                         strokeWidth="10"
                         trailWidth="10"
                         strokeLinecap="square"
@@ -65,7 +66,8 @@ export default class Skills extends React.Component {
                 <div style={circleContainerStyle}>
                     <FaCss3Alt style={svgStyles} className="css"/>
                     <Circle style={containerStyle}
-                        percent={percent[1]}
+                        // percent={this.state.percent}
+                        percent={percent/1.25}
                         strokeWidth="10"
                         trailWidth="10"
                         strokeLinecap="square"
@@ -75,7 +77,8 @@ export default class Skills extends React.Component {
                 <div style={circleContainerStyle}>
                     <FaJs style={svgStyles} className="js"/>
                     <Circle style={containerStyle}
-                        percent={percent[2]}
+                        // percent={this.state.percent}
+                        percent={percent/1.9}
                         strokeWidth="10"
                         trailWidth="10"
                         strokeLinecap="square"
@@ -85,7 +88,8 @@ export default class Skills extends React.Component {
                 <div style={circleContainerStyle}>
                     <FaReact style={svgStyles} className="react"/>
                     <Circle style={containerStyle}
-                        percent={percent[3]}
+                        // percent={this.state.percent}
+                        percent={percent/10}
                         strokeWidth="10"
                         trailWidth="10"
                         strokeLinecap="square"

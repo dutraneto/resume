@@ -4,7 +4,9 @@ import Icons from './Icons'
 
 export default props =>
     <aside className="contact">
-        <div className="about"><h2>about me</h2></div>
+        <div className="about">
+            <h2 className="skew">about me</h2>
+        </div>
         <p>420.2401 Gloucester St, Ottawa, ON, CA</p>
         <p>+1 (613)400.4801</p>
         <p>contact@dutraneto.com</p>
@@ -12,5 +14,7 @@ export default props =>
 
         <Icons />
 
-        <div className="about"><h2>skills</h2></div>
+        <div className="about">
+            <h2 className="skew">skills</h2>
+        </div>
     </aside>

@@ -17,7 +17,10 @@ div.about {
 
 h2 {
     color: #FFFFFF;
-    transform: skewX(15deg);
     margin: 0;
     font-size: 1.2rem;
+}
+
+.skew {
+    transform: skewX(15deg);
 }
