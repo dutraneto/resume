@@ -1,6 +1,8 @@
 import React from 'react'
 import './Skills.scss'
+import './Icons.scss'
 import { Circle } from 'rc-progress'
+import {FaHtml5, FaCss3Alt, FaJs, FaReact} from 'react-icons/fa'
 
 export default class Skills extends React.Component {
     constructor() {
@@ -36,11 +38,22 @@ export default class Skills extends React.Component {
         const circleContainerStyle = {
             width: '120px',
             height: '120px',
+            position: 'relative'
         };
+
+        const svgStyles = {
+            position: 'absolute',
+            top: '50%',
+            left: '50%',
+            transform: 'translate(-50%, -50%)',
+            width: '4rem',
+            height: '4rem',
+        }
 
         return (
             <div className="skills">
                 <div style={circleContainerStyle}>
+                    <FaHtml5 style={svgStyles} className="html"/>
                     <Circle style={containerStyle}
                         percent={percent[0]}
                         strokeWidth="10"
@@ -50,6 +63,7 @@ export default class Skills extends React.Component {
                     />
                 </div>
                 <div style={circleContainerStyle}>
+                    <FaCss3Alt style={svgStyles} className="css"/>
                     <Circle style={containerStyle}
                         percent={percent[1]}
                         strokeWidth="10"
@@ -59,6 +73,7 @@ export default class Skills extends React.Component {
                     />
                 </div>
                 <div style={circleContainerStyle}>
+                    <FaJs style={svgStyles} className="js"/>
                     <Circle style={containerStyle}
                         percent={percent[2]}
                         strokeWidth="10"
@@ -68,6 +83,7 @@ export default class Skills extends React.Component {
                     />
                 </div>
                 <div style={circleContainerStyle}>
+                    <FaReact style={svgStyles} className="react"/>
                     <Circle style={containerStyle}
                         percent={percent[3]}
                         strokeWidth="10"
