@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "node-sass": "^4.11.0",
+    "rc-progress": "^2.3.0",
     "react": "^16.8.2",
     "react-dom": "^16.8.2",
     "react-icons": "^3.4.0",
