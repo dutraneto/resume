@@ -7,12 +7,18 @@ import {FaHtml5, FaCss3Alt, FaJs, FaReact} from 'react-icons/fa'
 export default class Skills extends React.Component {
     constructor() {
         super()
-        this.state = {
-            percent: 0,
+        this.colors = {
             html: '#E34F26',
             css: '#1572B6',
             js: '#F7DF1E',
-            react: '#61DAFB',
+            react: '#61DAFB'
+        }
+        this.state = {
+            percent: 0,
+            html: this.colors.html,
+            css: this.colors.css,
+            js: this.colors.js,
+            react: this.colors.react,
         }
         this.increase = this.increase.bind(this);
     }
@@ -24,7 +30,7 @@ export default class Skills extends React.Component {
             return;
         }
         this.setState({ percent });
-        this.tm = setTimeout(this.increase, 10);
+        this.tm = setTimeout(this.increase, 15);
     }
     componentDidMount() {
         this.increase();
@@ -52,6 +58,7 @@ export default class Skills extends React.Component {
 
         return (
             <div className="skills">
+            {/* TODO: refactoring to DRY */}
                 <div style={circleContainerStyle}>
                     <FaHtml5 style={svgStyles} className="html"/>
                     <Circle style={containerStyle}
@@ -67,7 +74,7 @@ export default class Skills extends React.Component {
                     <FaCss3Alt style={svgStyles} className="css"/>
                     <Circle style={containerStyle}
                         // percent={this.state.percent}
-                        percent={percent/1.25}
+                        percent={percent/1.2}
                         strokeWidth="10"
                         trailWidth="10"
                         strokeLinecap="square"
