@@ -40,7 +40,7 @@ export default props =>
             </div>
         </article>
         <article>
-            <h3 className="h3">Front-end Developer, Freelancer <span className="year">2016 - Current</span></h3>
+            <h3 className="h3">Front-end Developer, IFPI, Brazil <span className="year">2016</span></h3>
             <div className="role-container">
                 <IconContext.Provider value={{ className: "bullet" }}>
                     <TiMediaRecord/>
