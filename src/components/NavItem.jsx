@@ -16,6 +16,6 @@ export default props =>
             <Link className="link" to="/education">education</Link>
         </li>
         <li>
-            <Link className="link" to="/">contact</Link>
+            <Link className="link" to="/download">download</Link>
         </li>
     </ul>
