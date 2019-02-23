@@ -5,10 +5,10 @@ import './NavItem'
 export default props =>
     <ul>
         <li>
-            <Link className="link" to="/">about</Link>
+            <Link className="link" to="/profile">profile</Link>
         </li>
         <li>
-            <Link className="link" to="/">skills</Link>
+            <Link className="link" to="/technical-skills">technical skills</Link>
         </li>
         <li>
             <Link className="link" to="/experience">experience</Link>

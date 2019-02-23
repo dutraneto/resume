@@ -1,7 +1,5 @@
 import React from 'react'
 import './Experience.scss'
-import {IconContext} from 'react-icons'
-import { FaCircle } from 'react-icons/fa'
 
 export default props =>
     <section className="cv">

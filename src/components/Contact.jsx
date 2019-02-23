@@ -15,6 +15,6 @@ export default props =>
         <Icons />
 
         <div className="about">
-            <h2 className="skew">skills</h2>
+            <h2 className="skew">skill Set</h2>
         </div>
     </aside>
