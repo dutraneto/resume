@@ -2,12 +2,14 @@
 
 This project was created to learn the basics of React.js, including JSX and pure react, class-based and stateless functional components, state and props, one source of truth, and other fundamentals. This project is responsive with accessibility features and print stylings. Since server-side rendering is not setup for this project, a JavaScript fallback page was created.
 
-### Live
+## Live
+
 
 [https://dutraneto.gitlab.io/resume](https://dutraneto.gitlab.io/resume)
 
 
-### Dependencies
+## Dependencies
+
 
 - node-sass
 - rc-progress
@@ -19,7 +21,8 @@ This project was created to learn the basics of React.js, including JSX and pure
 - react-router-dom
 - react-scripts
 
-### Tools
+## Tools
+
 
 - HTML
 - CSS/SASS
