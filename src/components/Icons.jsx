@@ -1,5 +1,4 @@
 import React, {Component} from 'react'
-import { Link } from 'react-router-dom'
 import {IconContext} from 'react-icons'
 import {FaLinkedin, FaGitlab, FaFacebook, FaGithub, FaCodepen} from 'react-icons/fa'
 import './Icons.scss'
@@ -10,19 +9,19 @@ class Icons extends Component {
             <IconContext.Provider value={{ className: 'react-icons' }}>
                 <ul className="icons">
                     <li>
-                        <Link className="in" to="/"><FaLinkedin /></Link>
+                        <a className="in" href="https://www.linkedin.com/in/dutraneto/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
                     </li>
                     <li>
-                        <Link className="gitlab" to="/"><FaGitlab /></Link>
+                        <a className="gitlab" href="https://gitlab.com/users/dutraneto/projects" target="_blank" rel="noopener noreferrer"><FaGitlab /></a>
                     </li>
                     <li>
-                        <Link className="github" to="/"><FaGithub /></Link>
+                        <a className="github" href="https://github.com/dutraneto" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
                     </li>
                     <li>
-                        <Link className="codepen" to="/"><FaCodepen /></Link>
+                        <a className="codepen" href="https://codepen.io/dutraneto/" target="_blank" rel="noopener noreferrer"><FaCodepen /></a>
                     </li>
                     <li>
-                        <Link className="face" to="/"><FaFacebook /></Link>
+                        <a className="face" href="https://www.facebook.com/dudutraneto" target="_blank" rel="noopener noreferrer"><FaFacebook /></a>
                     </li>
                 </ul>
             </IconContext.Provider>

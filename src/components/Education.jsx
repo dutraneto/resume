@@ -4,7 +4,6 @@ import './Experience.scss'
 export default props =>
     <section className="cv">
         <div className="container">
-        {/* EMPLOYMENT */}
             <h2 className="h2">education</h2>
             <div className="line"></div>
         </div>
