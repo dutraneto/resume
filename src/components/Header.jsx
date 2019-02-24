@@ -7,6 +7,6 @@ export default props =>
         <h1>{props.author.name}</h1>
         <p>{props.author.role}</p>
 
-        <Nav className="nav" />
+        <Nav className="nav" {...props}/>
     </header>
 

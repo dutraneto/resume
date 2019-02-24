@@ -1,26 +1,37 @@
 .nav {
     background-color: var(--heading-primary);
-    padding: .5rem;
-    width: 60%;
+    width: 70%;
+    border: 1px solid var(--heading-primary);
     border-radius: 5px;
+    overflow: hidden;
 }
 
 ul {
+    margin: 0;
     padding: 0;
     display: flex;
-    justify-content: space-evenly;
-
+    justify-content: space-between;
     list-style: none;
-
 }
 
-a.link{
+.link{
     display: flex;
     align-items: center;
-    color: #FFFFFF;
+    color: inherit;
     text-transform: uppercase;
     text-decoration: none;
     font-weight: bold;
+}
+
+.nav li {
+    padding: 1.5rem;
+    color: #FFFFFF;
+    transition: all 230ms linear;
+}
+
+.nav li:hover {
+    background-color:#F3F3F3;
+    color: var(--heading-primary);
 }
 
 
