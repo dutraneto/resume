@@ -9,7 +9,7 @@ export default props =>
             <div className="line"></div>
         </div>
         <div className="resume">
-            <a  href="../assets/img/jose_dutra_resume.pdf"
+            <a  href="https://drive.google.com/file/d/1gdfe5xB9ykWuF5kObHCZ81NncdT4vjfA/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-disabled="false"
