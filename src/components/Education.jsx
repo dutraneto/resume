@@ -10,7 +10,5 @@ export default props =>
         <article>
             <h3 className="h3">Bachelor of Analysis and Systems Development - Instituto Federal de Educação,
 Ciência e Tecnologia do Estado do Piauí – IFPI, Picos, PI, Brazil<span className="year">2017</span></h3>
-
         </article>
-
     </section>

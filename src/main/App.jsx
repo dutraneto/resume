@@ -7,6 +7,7 @@ import Routes from './Routes'
 import author from '../state/author'
 import socialProfiles from '../state/socialProfiles'
 import paths from '../state/paths'
+import skillSets from '../state/skillSets'
 
 // export default props =>
 //     <BrowserRouter>
@@ -22,7 +23,8 @@ class App extends React.Component {
     state = {
         author: author,
         socialProfiles: socialProfiles,
-        paths: paths
+        paths: paths,
+        skillSets: skillSets
     }
 
     render() {
@@ -35,7 +37,7 @@ class App extends React.Component {
                     <Main author={this.state.author}
                           socialProfiles={this.state.socialProfiles}
                     />
-                    <Routes/>
+                    <Routes skillSets={this.state.skillSets}/>
                 </div>
             </BrowserRouter>
         )

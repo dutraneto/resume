@@ -9,7 +9,7 @@ import Download from '../components/Download';
 export default props =>
     <Switch>
         <Route exact path="/" component={Experience}/>
-        <Route path="/profile" component={Summary}/>
+        <Route path="/profile" render={(props) => <Summary {...props}/>}/>
         <Route path="/technical-skills" component={TechnicalSkills}/>
         <Route path="/experience" component={Experience}/>
         <Route path="/education" component={Education}/>
