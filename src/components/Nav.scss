@@ -1,9 +1,16 @@
+@import "../mixins";
+
 .nav {
     background-color: var(--heading-primary);
     width: 70%;
     border: 1px solid var(--heading-primary);
     border-radius: 5px;
     overflow: hidden;
+
+    @include respond(iphone5) {
+        margin: 0 auto;
+        // width: 320px;
+    }
 }
 
 ul {
@@ -12,6 +19,10 @@ ul {
     display: flex;
     justify-content: space-between;
     list-style: none;
+
+    @include respond(iphone5) {
+        justify-content: center;
+    }
 }
 
 .link{
@@ -27,6 +38,10 @@ ul {
     padding: 1.5rem;
     color: #FFFFFF;
     transition: all 230ms linear;
+
+    @include respond(iphone5) {
+        padding: 1.5rem .8rem;
+    }
 }
 
 .nav li:hover {

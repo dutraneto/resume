@@ -9,16 +9,6 @@ import socialProfiles from '../state/socialProfiles'
 import paths from '../state/paths'
 import skillSets from '../state/skillSets'
 
-// export default props =>
-//     <BrowserRouter>
-//         <div className="content">
-//             <Header name="josé dutra" position="front-end web developer"/>
-//             <Main />
-//             <Routes />
-//             {/* <Experience /> */}
-//         </div>
-//     </BrowserRouter>
-
 class App extends React.Component {
     state = {
         author: author,

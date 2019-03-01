@@ -1,6 +1,13 @@
+@import "../mixins";
+
 .header {
     background-color: #F3F3F3;
     padding: 5rem 0 2rem 10rem;
+
+    @include respond(iphone5) {
+        padding: 3rem 0 2rem 0;
+        text-align: center;
+    }
 }
 
 h1 {
@@ -10,6 +17,11 @@ h1 {
     text-transform: uppercase;
     color: var(--heading-primary);
     letter-spacing: 4px;
+
+    @include respond(iphone5) {
+        font-size: 4rem;
+        letter-spacing: 3px;
+    }
 }
 
 .header p {

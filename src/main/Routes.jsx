@@ -13,7 +13,7 @@ export default props =>
         <Route path="/technical-skills" component={TechnicalSkills}/>
         <Route path="/experience" component={Experience}/>
         <Route path="/education" component={Education}/>
-        <Route path="/download" component={Download}/>
+        <Route path="/download" render={(props) => <Download {...props}/>}/>
         <Redirect from="*" to="/"></Redirect>
     </Switch>
 

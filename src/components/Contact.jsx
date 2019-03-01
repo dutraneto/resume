@@ -9,9 +9,9 @@ export default props =>
         </div>
         <p>{props.author.address}</p>
         <p>{props.author.phone}</p>
-        <p><a href="mailto:contact@dutraneto.com">{props.author.email}</a></p>
+        <p><a href={`mailto:${props.author.email}`}>{props.author.email}</a></p>
         <p>
-            <a href="https://dutraneto.com/portfolio"
+            <a href={props.author.website}
                target="_blank"
                rel="noopener noreferrer">
                {props.author.website}
