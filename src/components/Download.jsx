@@ -13,7 +13,7 @@ export default class Download extends React.Component {
             <h2 className="h2">Download this resume</h2>
             <div className="line"></div>
         </div>
-        <div className="resume">
+        <div className="resume" id="download">
             <a  href={this.state.author.resume}
                 target="_blank"
                 rel="noopener noreferrer"

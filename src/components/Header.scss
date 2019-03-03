@@ -4,8 +4,12 @@
     background-color: #F3F3F3;
     padding: 5rem 0 2rem 10rem;
 
-    @include respond(iphone5) {
-        padding: 3rem 0 2rem 0;
+    @include respond(iphone6) {
+        padding: 3rem 0 0 0;
+        text-align: center;
+    }
+    @include respond(iphone6p) {
+        padding: 3rem 0 0 0;
         text-align: center;
     }
 }
@@ -17,11 +21,6 @@ h1 {
     text-transform: uppercase;
     color: var(--heading-primary);
     letter-spacing: 4px;
-
-    @include respond(iphone5) {
-        font-size: 4rem;
-        letter-spacing: 3px;
-    }
 }
 
 .header p {
@@ -29,4 +28,11 @@ h1 {
     font-size: 1.3rem;
     color: var(--paragraph-primary);
     text-transform: uppercase;
+
+    @include respond(iphone6) {
+        transform: translateX(-13%);
+    }
+    @include respond(iphone6p) {
+        transform: translateX(-15%);
+    }
 }

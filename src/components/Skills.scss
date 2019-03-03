@@ -1,5 +1,18 @@
+@import "../mixins";
+
 .skills {
     padding-right: 10rem;
     display: flex;
     justify-content: space-between;
+
+    @include respond(iphone6) {
+        padding: 2rem 0;
+        justify-content: center;
+        order: 1;
+    }
+    @include respond(iphone6p) {
+        padding: 3rem 0;
+        justify-content: center;
+        order: 1;
+    }
 }

@@ -6,7 +6,7 @@ import Skills from './Skills'
 
 export default props =>
     <main className="main">
-        <div>
+        <div className="author">
             <Contact {...props}/>
             <Profile {...props}/>
         </div>

@@ -46,7 +46,7 @@ export default class Skills extends React.Component {
                 {
                     circles.map((circle, index) => {
                         return (
-                            <div key={index} style={circle.circleContainerStyle}>
+                            <div key={index} style={circle.circleContainerStyle} className="circles">
                                 <circle.svg style={circle.svgStyle} className={circle.className}/>
                                 <Circle style={circle.containerStyle}
                                         percent={circle.percent}

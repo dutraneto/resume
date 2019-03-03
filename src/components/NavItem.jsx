@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { HashLink as Link } from 'react-router-hash-link'
 
 export default props =>
     <ul>
@@ -8,9 +8,9 @@ export default props =>
                 return (
                     <li key={i}>
                         <Link className="link"
-                              to={item.split(" ").join("-")}
+                              to={`${item}#${item}`}
                         >
-                            {item.split(" ").join(" ")}
+                            {item}
                         </Link>
                     </li>
                 )

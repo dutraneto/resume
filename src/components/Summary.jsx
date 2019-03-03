@@ -15,7 +15,7 @@ export default class Summary extends React.Component {
                 <h2 className="h2">profile</h2>
                 <div className="line"></div>
             </div>
-            <article>
+            <article id="profile">
                 {
                     this.state.skillSets.skillSets.softSkills.map((skill, index) => {
                         return (

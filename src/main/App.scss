@@ -9,9 +9,16 @@
     border-radius: 10px;
     overflow: hidden;
 
-    @include respond(iphone5) {
+    @include respond(iphone6) {
+        margin: 0;
+        width: 100%;
+        height: auto;
+        border-radius: 0;
+    }
+    @include respond(iphone6p) {
         margin: 0;
         width: 100%;
         border-radius: 0;
+        height: auto;
     }
 }

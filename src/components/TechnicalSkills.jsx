@@ -11,7 +11,7 @@ export default props =>
             <div className="line"></div>
         </div>
         <article>
-            <div className="role-container">
+            <div id="skills" className="role-container">
                 <IconContext.Provider value={{ className: "bullet", size: "1em" }}>
                     <FaCircle/>
                 </IconContext.Provider>

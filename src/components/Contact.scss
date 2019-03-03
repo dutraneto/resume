@@ -1,8 +1,31 @@
+@import "../mixins";
+.contact {
+    @include respond(iphone6) {
+        order: 2;
+        margin-right: 5rem;
+    }
+    @include respond(iphone6p) {
+        order: 2;
+        margin-right: 5rem;
+    }
+}
+
 .contact p {
     margin-left: 1rem;
     margin-top: -.5rem;
     font-size: 1rem;
     color: var(--paragraph-primary);
+
+    @include respond(iphone6) {
+        text-align: end;
+        font-size: 1.6rem;
+
+    }
+    @include respond(iphone6p) {
+        text-align: end;
+        font-size: 1.6rem;
+
+    }
 }
 
 div.about {
@@ -12,12 +35,33 @@ div.about {
     display: inline-block;
     background-color: var(--heading-primary);
     transform: skewX(-15deg);
+
+    @include respond(iphone6) {
+        width: 100%;
+        margin: 2rem auto;
+        padding: .5rem 1rem;
+    }
+    @include respond(iphone6p) {
+        width: 100%;
+        margin: 2rem auto;
+        padding: .5rem 1rem;
+    }
+
 }
 
 h2 {
     color: #FFFFFF;
     margin: 0;
     font-size: 1.2rem;
+
+    @include respond(iphone6) {
+        font-size: 2rem;
+        text-align: end;
+    }
+    @include respond(iphone6p) {
+        font-size: 2rem;
+        text-align: end;
+    }
 }
 
 .skew {

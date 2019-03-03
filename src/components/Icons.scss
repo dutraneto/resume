@@ -1,11 +1,27 @@
+@import "../mixins";
+
 .icons {
     margin: 2rem 0 0 1rem;
     width: 18rem;
     justify-content: space-between;
+
+    @include respond(iphone6) {
+        width: 100%;
+    }
+    @include respond(iphone6p) {
+        width: 100%;
+    }
 }
 
 .react-icons {
     font-size: 2.5rem;
+
+    @include respond(iphone6) {
+        font-size: 5rem;
+    }
+    @include respond(iphone6p) {
+        font-size: 5rem;
+    }
 }
 
 .Linkedin {

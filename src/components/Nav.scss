@@ -7,9 +7,15 @@
     border-radius: 5px;
     overflow: hidden;
 
-    @include respond(iphone5) {
+    @include respond(iphone6) {
         margin: 0 auto;
-        // width: 320px;
+        border-radius: 0;
+        width: 375px;
+    }
+    @include respond(iphone6p) {
+        margin: 0 auto;
+        border-radius: 0;
+        width: 414px;
     }
 }
 
@@ -20,8 +26,11 @@ ul {
     justify-content: space-between;
     list-style: none;
 
-    @include respond(iphone5) {
+    @include respond(iphone6) {
         justify-content: center;
+    }
+    @include respond(iphone6p) {
+        justify-content: space-evenly;
     }
 }
 
@@ -39,15 +48,21 @@ ul {
     color: #FFFFFF;
     transition: all 230ms linear;
 
-    @include respond(iphone5) {
-        padding: 1.5rem .8rem;
+    @include respond(iphone6) {
+        padding: 2rem 1.2rem;
+    }
+    @include respond(iphone6p) {
+        padding: 3rem 0;
+        font-size: 1.5rem;
     }
 }
 
-.nav li:hover {
-    background-color:#F3F3F3;
-    color: var(--heading-primary);
-}
+
+
+// .nav li:hover {
+//     background-color:#F3F3F3;
+//     color: var(--heading-primary);
+// }
 
 
 

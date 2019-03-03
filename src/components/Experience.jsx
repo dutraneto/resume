@@ -11,7 +11,7 @@ export default props =>
             <h2 className="h2">employment experience</h2>
             <div className="line"></div>
         </div>
-        <article>
+        <article id="experience">
             <h3 className="h3">Front-end Developer, Freelancer <span className="year">2016 - Current</span></h3>
             <div className="role-container">
                 <IconContext.Provider value={{ className: "bullet", size: "1em" }}>
