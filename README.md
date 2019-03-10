@@ -1,12 +1,10 @@
 ## Infographic Resume
 
-This project was created to learn the basics of React.js, including JSX and pure react, class-based and stateless functional components, state and props, one source of truth, and other fundamentals. This project is responsive with accessibility features and print stylings. Since server-side rendering is not setup for this project, a JavaScript fallback page was created.
+This project was created to learn the fundamentals of React.js, including JSX and pure react, class-based and stateless functional components, state and props.
 
 ## Live
 
-
 [https://dutraneto.gitlab.io/resume](https://dutraneto.gitlab.io/resume)
-
 
 ## Dependencies
 
@@ -22,7 +20,6 @@ This project was created to learn the basics of React.js, including JSX and pure
 - react-scripts
 
 ## Tools
-
 
 - HTML
 - CSS/SASS
