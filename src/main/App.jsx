@@ -14,7 +14,7 @@ class App extends React.Component {
         author: author,
         socialProfiles: socialProfiles,
         paths: paths,
-        skillSets: skillSets
+        skillSets: skillSets,
     }
 
     render() {
@@ -27,7 +27,7 @@ class App extends React.Component {
                     <Main author={this.state.author}
                           socialProfiles={this.state.socialProfiles}
                     />
-                    <Routes skillSets={this.state.skillSets}/>
+                    <Routes/>
                 </div>
             </BrowserRouter>
         )

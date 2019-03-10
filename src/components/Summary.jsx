@@ -23,7 +23,7 @@ export default class Summary extends React.Component {
                                 <IconContext.Provider value={{ className: "bullet", size: "1em" }}>
                                     <FaCircle/>
                                 </IconContext.Provider>
-                                <p className="p">{skill}}</p>
+                                <p className="p">{skill}</p>
                             </div>
                         )
                         })
