@@ -10,7 +10,7 @@ import paths from '../state/paths'
 import skillSets from '../state/skillSets'
 
 class App extends React.Component {
-    state = {
+    static defaultProps = {
         author: author,
         socialProfiles: socialProfiles,
         paths: paths,
@@ -21,11 +21,11 @@ class App extends React.Component {
         return (
             <BrowserRouter>
                 <div className="content">
-                    <Header author={this.state.author}
-                            paths={this.state.paths}
+                    <Header author={author}
+                            paths={paths}
                     />
-                    <Main author={this.state.author}
-                          socialProfiles={this.state.socialProfiles}
+                    <Main author={author}
+                          socialProfiles={socialProfiles}
                     />
                     <Routes/>
                 </div>
