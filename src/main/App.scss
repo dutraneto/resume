@@ -2,11 +2,11 @@
 
 .content {
     margin: 5rem;
-    // height: 112.38rem;
+    height: 130rem;
     width: 79.59rem;
     background-color: #FFFFFF;
     box-shadow: 0 8px 17px 0 rgba(0,0,0,.2),0 6px 20px 0 rgba(0,0,0,.19);
-    border-radius: 10px;
+    border-radius: 7px;
     overflow: hidden;
 
     @include respond(iphone6) {
