@@ -3,7 +3,7 @@ import {FaHtml5, FaCss3Alt, FaJs, FaReact} from 'react-icons/fa'
 export const classNames = ["html", "css", "js", "react"]
 export const colors = ['#E34F26', '#1572B6', '#F7DF1E', '#61DAFB']
 export const svgs = [FaHtml5, FaCss3Alt, FaJs, FaReact]
-export const percents = [1.2, 1.2, 1.9, 10]
+export const percents = [1.1, 1.2, 1.7, 2]
 export const containerStyle = {width: '10rem'}
 export const circleContainerStyle = {
     width: '10rem',

@@ -4,7 +4,7 @@ const freelance = {
 	date: '2016 - Current',
 	location: 'Brazil',
 	duties: [
-		'Translated design UX wireframes and mockups into responsive, interactive features, using HTML/CSS and JavaScript',
+		'Translated design UX wire-frames and mockups into responsive, interactive features, using HTML/CSS and JavaScript',
 		'Developed mobile and responsive websites',
 		'Implemented a logo for a Canadian company using CSS',
 		'Increased project efficiency by 20% using npm, Git, Gulp, Sass, and Node'

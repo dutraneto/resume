@@ -20,7 +20,7 @@ export default class Skills extends React.Component {
             return;
         }
         this.setState({ percent });
-        this.tm = setTimeout(this.increase, 10);
+        this.tm = setTimeout(this.increase, 200);
     }
     componentDidMount() {
         this.increase();
