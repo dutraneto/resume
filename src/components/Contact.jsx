@@ -2,7 +2,7 @@ import React from 'react'
 import './Contact.scss'
 import Icons from './Icons'
 
-export default props =>
+const Contact = (props) => (
     <aside className="contact">
         <div className="about">
             <h2 className="skew">about me</h2>
@@ -24,3 +24,6 @@ export default props =>
             <h2 className="skew">skill Set</h2>
         </div>
     </aside>
+)
+
+export default Contact

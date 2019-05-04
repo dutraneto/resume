@@ -1,5 +1,5 @@
 const author = {
-    name: "José Dutra",
+    name: "J. Dutra",
     role: "Front-end Web Developer",
     address: "420.2401 Gloucester St, Ottawa, ON, CA",
     phone: "+1 (613)400.4801",
