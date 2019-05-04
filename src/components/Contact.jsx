@@ -18,7 +18,7 @@ const Contact = (props) => (
             </a>
         </p>
 
-        <Icons {...props}/>
+        <Icons socialProfiles={props.socialProfiles}/>
 
         <div className="about">
             <h2 className="skew">skill Set</h2>
